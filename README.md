@@ -1,26 +1,36 @@
-# ERTMS-objektbibliotek
+# ERTMS-objektbibliotek – version 6.0
 
-Objektbibliotek för ERTMS med 3D-geometrier, 2D-celler, objektlista (Feature Definitions) och attributlista.
+Objektbibliotek för ERTMS med 3D-geometrier, 2D-celler, objektlista (feature definitions) och attributlista.
+Ni hittar publicerade versioner under [Releases](https://github.com/trafikverket/ertms-objektbibliotek/releases) på Trafikverkets GitHub.
+
+## Kompatibilitet
+
+ERTMS-objektbibliotek från version 6.0 och uppåt är anpassat för leverans mot systemet Sophie. Projekt som ska leverera till BIS måste använda version 5.0 eller lägre.
+
 
 ## Innehåll
 
-Biblioteket har tidigare distribuerats utanför GitHub, senast som version 5.0. Första versionen i detta repo planeras bli **v6.0.0**. Äldre versioner finns därför inte i repots historik.
+ERTMS-objektbibliotek består av dessa delar som distribueras tillsammans med denna readme-fil.
 
-| Del | Format | Beskrivning |
-|-----|--------|-------------|
-| 3D-geometrier | `.dgn` | 3D-representation av järnvägsobjekt |
-| 2D-celler | `.dgn` | 2D-symboler/celler för ritningar |
-| Feature Definitions | `.csv` | Lista över objekt som ingår i biblioteket, med koppling till geometrier och celler för grafisk representation samt till attributset |
-| Attributlista | `.csv` | Attributset som kopplas till objekten |
+* **ERTMS_6.0_3D.cel:** 3D-representation av järnvägsobjekt.
+* **ERTMS_6.0_2D.cel:** 2D-symboler/celler för ritningar.
+* **featureDefinitions-v6.0.csv:** Lista över objekt som ingår i biblioteket, med koppling till geometrier och celler för grafisk representation samt till attributset. Semikolonseparerad och kodad i UTF-8 med BOM.
+* **propertySets-v6.0.csv:** Attributset som kopplas till objekten. Semikolonseparerad och kodad i UTF-8 med BOM.
+* **Katalog Objektbiblioteket v6.0.pdf:** Förteckning över alla feature definitions med beskrivning och bilder på 2D-celler samt 3D-geometrier.
 
-## Branchstrategi
 
-- **`main`** innehåller den senaste godkända, skarpa versionen av biblioteket.
-- **`dev`** innehåller pågående arbete. Innehållet här kan vara ofullständigt, ändras löpande och är **inte** godkänt för skarp användning.
-- **`release/{major}.{minor}`** (t.ex. `release/1.0`) innehåller en specifik version av biblioteket och används för buggfixar av den versionen.
+### Kopplingen mellan feature definitions och attribut
 
-Ändringar görs i `dev` (eller i feature-brancher som mergas till `dev`). När en ny version är granskad och klar mergas den till `main`, och en release-branch skapas vid behov. Buggfixar för tidigare versioner görs i respektive release-branch.
+Varje feature definition använder ett generellt propertyset för sin objekttyp: SpotLocationEntity för punktobjekt och LinearLocationEntity för längdsträckta objekt. Där det är relevant kopplas dessutom objektspecifika egenskaper till respektive feature definition. Vissa objekt har därför bara det generella propertysetet och saknar objektspecifika egenskaper.
 
-## Versionering
 
-Skarpa versioner märks med taggar, t.ex. `v1.0.0`. Varje tagg avser en specifik, godkänd version av biblioteket. Buggfixar ger ny patch-version (`v1.0.1`), nya eller ändrade objekt ger ny minor- eller major-version.
+## Format
+
+Geometrier och celler levereras som .cel-filer.
+
+Om ett projekt har behov av geometrier och celler i .dwg-format kan ni kontakta förvaltningen, [se denna sida för kontaktinformation](https://earum.sp.trafikverket.se/sites/20260113073637/home/Sidor/ERTMS-objektbibliotek.aspx) (kräver behörighet).
+
+
+## Revideringshistorik
+
+För tidigare versioner av biblioteket har revideringsdokument tagits fram som listar ändringarna mellan versionerna. Version 6.0 innebär en så omfattande förändring att den räknas som ett nytt bibliotek, och något revideringsdokument finns därför inte för denna version. Planen är att revideringsdokument tas fram från och med nästa release.

@@ -1,0 +1,307 @@
+﻿propertySetName;propertyName;lifecycleStageAbbreviation;datatypeName;regExPattern;allowedValues;propertyDescription
+ArrowSpeedBoard;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+ArrowSpeedBoard;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+AuxiliaryPowerTransformer;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+AuxiliaryPowerTransformer;har faskonfiguration;BH;;;3-fas||$||2-fas;Faskonfiguration för ansluten kraftförsörjning.
+AuxiliaryPowerTransformer;har fågelskydd;BH;;;Kombinerat skydd||$||Isolationsskydd anslutningslinor||$||Isolatorskydd||$||Ej relevant||$||Okänt;Typ av fågelskydd/isoleringsskydd (t.ex. på isolator och/eller anslutningslinor).
+AuxiliaryPowerTransformer;har kapslingstyp;BH;;;Helkapslad||$||Okapslad;Kapslingstyp (kapslad eller okapslad).
+AuxiliaryPowerTransformer;har märkström på högspänningssäkring;BH;;;10 A||$||16 A||$||20 A||$||25 A||$||32 A||$||40 A||$||50 A||$||63 A||$||6 A||$||Okänt;Märkström för HSP-säkring (A).
+AuxiliaryPowerTransformer;har spänningskonfiguration;BH;;;11/0,24 kV||$||11/0,42 kV||$||11/0,42/0,24 kV||$||11/2×0,12 kV||$||11–22/0,24 kV||$||11–22/0,42 kV||$||11–22/0,42/0,24 kV||$||11–22/2×0,12 kV||$||22/0,24 kV||$||22/0,42 kV||$||22/0,42/0,24 kV||$||22/2×0,12 kV||$||Okänt;Anger den fördefinierade kombinationen av primär- och sekundärspänningar, inklusive fasutförande och eventuell omkopplingsbarhet, som gäller för hjälpkrafttransformatorn.
+AuxiliaryPowerTransformer;har säkringstyp;BH;;;Smältsäkring||$||Högeffekt 12 kV||$||Högeffekt 24 kV||$||Reläskydd||$||SHYE||$||Okänt (använd sparsamt);Typ av HSP-säkring/skydd.
+AuxiliaryPowerTransformer;har ventilavledare;BH;;;Nej||$||Okänt||$||Ja;Förekomst av ventilavledare.
+AuxiliaryPowerTransformer;installationsår;BH;gYear;;;År då entiteten installerades.
+AuxiliaryPowerTransformer;matar;BH;string;;;Objektet som matas av transformatorn (fritext).
+AuxiliaryPowerTransformer;märkeffekt;BH;string;^(?:[1-9]d{0,2}|[1-9]d{0,2}/[1-9]d{0,2})$;;Transformatorns storlek/märkeffekt i kVA (1-999/999).
+BufferStop;har antal bromselement;BH;;;10||$||2||$||4||$||6||$||8||$||Ej relevant;Antal bromselement på stoppbocken.
+BufferStop;har antal tillsatselement;BH;;;10||$||12||$||14||$||16||$||18||$||2||$||20||$||4||$||6||$||8||$||Ej relevant;Antal tillsatselement på stoppbocken.
+BufferStop;har montagetyp;BH;;;Fast montage||$||Ej relevant||$||Glidbart montage||$||Okänt;Anger hur stoppbocken är monterad i rälerna.
+BufferStop;har typ;BH;;;110BZ4 S||$||77||$||77 hydraulisk||$||Betong||$||Betong hydraulisk||$||Grushög||$||Gulo||$||Gulo FCK||$||Gulo FCK Hyd400||$||Gulo FCK Hyd800||$||Gulo Hyd400||$||Gulo Hyd800||$||Klose 110BZ4 S||$||Räl||$||Okänt;Typ av stoppbock.
+CableChamber;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+CableChamber;diameter;BH;integer;;;Diameter angiven i millimeter.
+CableChamber;har lockmaterial;BH;;;Aluminium||$||Betong||$||Glasfiberarmerad plast||$||Ej relevant||$||Polyeten||$||Plåt||$||Okänt||$||Trä;Material locket är tillverkat av.
+CableChamber;har material;BH;;;Betong||$||Glasfiberarmerad plast||$||Ej relevant||$||Polyeten||$||Plåt||$||Okänt||$||Trä;Material kabelhanteringsobjektet är tillverkat i.
+CableChamber;har typ;SH;;;Halvbrunn||$||Kabelbrunn||$||Kabelbrunn med kräldjursevakuering;Definierar typen av kabelbrunn för instansen.
+CableDuct;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+CableDuct;antal rör;BH;integer;;;Antal rör i kanalisationen.
+CableDuct;diameter;BH;integer;;;Diameter angiven i millimeter.
+CableDuct;har material;BH;;;Betong||$||Glasfiberarmerad plast||$||Ej relevant||$||Polyeten||$||Plåt||$||Okänt||$||Trä;Material kabelhanteringsobjektet är tillverkat i.
+CableDuct;har typ;SH;;;Kabelstege||$||Multikanalisation||$||Flerfackskanal||$||Rörkanalisation;Anger kabelrörets konstruktionella typ, exempelvis enkelrör, flerfackskanalisation eller annan definierad variant av kabelrör.
+CableTrough;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+CableTrough;bredd;BH;integer;;;Bredd angiven i millimeter.
+CableTrough;har lockmaterial;BH;;;Aluminium||$||Betong||$||Glasfiberarmerad plast||$||Ej relevant||$||Polyeten||$||Plåt||$||Okänt||$||Trä;Material locket är tillverkat av.
+CableTrough;har material;BH;;;Betong||$||Glasfiberarmerad plast||$||Ej relevant||$||Polyeten||$||Plåt||$||Okänt||$||Trä;Material kabelhanteringsobjektet är tillverkat i.
+CompactTransformerSubstation;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+CompactTransformerSubstation;har fasadutförande;BH;;;Tegel||$||Betong||$||Ej relevant||$||Annat||$||Plåt||$||Okänt||$||Trä;Fasadutförande som definierar teknikbyggnadens yttre klimatskal.
+CompactTransformerSubstation;har faskonfiguration;BH;;;3-fas||$||2-fas;Faskonfiguration för ansluten kraftförsörjning.
+CompactTransformerSubstation;har faskonfiguration hjälpkraft;BH;;;Uppgift saknas eller finns ej||$||1-fas||$||3-fas||$||2-fas;Faskonfiguration för hjälpkraft.
+CompactTransformerSubstation;har faskonfiguration ortsnät;BH;;;Uppgift saknas eller finns ej||$||1-fas||$||3-fas||$||2-fas;Faskonfiguration för ortsnät (extern nätleverantör).
+CompactTransformerSubstation;har fågelskydd;BH;;;Kombinerat skydd||$||Isolationsskydd anslutningslinor||$||Isolatorskydd||$||Ej relevant||$||Okänt;Typ av fågelskydd/isoleringsskydd (t.ex. på isolator och/eller anslutningslinor).
+CompactTransformerSubstation;har kapslingstyp;BH;;;Helkapslad||$||Okapslad;Kapslingstyp (kapslad eller okapslad).
+CompactTransformerSubstation;har mellantrafo effektmärkning;BH;;;100 kVA||$||10 kVA||$||10 + 25 kVA||$||110 kVA||$||12 kVA||$||12 + 25 kVA||$||130 kVA||$||14 kVA||$||150 kVA||$||15 kVA||$||173 kVA||$||180 kVA||$||200 kVA||$||20 kVA||$||25 kVA||$||30 kVA||$||35 kVA||$||3 kVA||$||40 kVA||$||4 kVA||$||50 kVA||$||55 kVA||$||5 kVA||$||60 kVA||$||630 kVA||$||63 kVA||$||6 kVA||$||70 kVA||$||800 kVA||$||80 kVA||$||8 kVA||$||Ej relevant||$||Okänt;Mellantrafons storlek/effektmärkning, i kVA.
+CompactTransformerSubstation;har märkström på högspänningssäkring;BH;;;10 A||$||16 A||$||20 A||$||25 A||$||32 A||$||40 A||$||50 A||$||63 A||$||6 A||$||Okänt;Märkström för HSP-säkring (A).
+CompactTransformerSubstation;har ordinarie kraftförsörjningstyp;BH;;;Hjälpkraft||$||Ortsnät||$||Ej relevant||$||Kontaktledning||$||Okänt;Den ordinarie kraftförsörjningen som används vid normal drift, före eventuell omkoppling till redundant eller reservmatning.
+CompactTransformerSubstation;har ortsnätsägare;BH;string;;;Nätägare för ortsnät.
+CompactTransformerSubstation;har reservelverksutförande;BH;;;Integrerat||$||Ej relevant||$||Fristående||$||Okänt;Reservelverkets utförande (t.ex. integrerat/fristående).
+CompactTransformerSubstation;har spänningskonfiguration;BH;;;11/0,24 kV||$||11/0,42 kV||$||11/0,42/0,24 kV||$||11/2×0,12 kV||$||11–22/0,24 kV||$||11–22/0,42 kV||$||11–22/0,42/0,24 kV||$||11–22/2×0,12 kV||$||22/0,24 kV||$||22/0,42 kV||$||22/0,42/0,24 kV||$||22/2×0,12 kV||$||Okänt;Anger den fördefinierade kombinationen av primär- och sekundärspänningar, inklusive fasutförande och eventuell omkopplingsbarhet, som gäller för hjälpkrafttransformatorn.
+CompactTransformerSubstation;har status för ordnings- och skyddsregler;BH;;;Nej||$||Loggbok finns men regler saknas||$||Ja, med loggbok||$||Ej relevant||$||Ja, utan loggbok||$||Okänt;Anger om ordnings- och skyddsregler finns uppsatta.
+CompactTransformerSubstation;har säkringsmärkström på hjälpkraft;BH;;;100 A||$||10 A||$||125 A||$||160 A||$||16 A||$||200 A||$||20 A||$||250 A||$||25 A||$||32 A||$||350 A||$||35 A||$||400 A||$||40 A||$||50 A||$||60 A||$||63 A||$||6 A||$||80 A||$||Uppgift saknas eller finns ej;Nominell säkringsmärkström (A) för hjälpkraft.
+CompactTransformerSubstation;har säkringsmärkström på ortsnät;BH;;;100 A||$||10 A||$||125 A||$||160 A||$||16 A||$||200 A||$||20 A||$||250 A||$||25 A||$||315 A||$||32 A||$||35 A||$||50 A||$||60 A||$||63 A||$||80 A||$||Uppgift saknas eller finns ej;Nominell säkringsmärkström (A) för ortsnät.
+CompactTransformerSubstation;har säkringstyp;BH;;;Smältsäkring||$||Högeffekt 12 kV||$||Högeffekt 24 kV||$||Reläskydd||$||SHYE||$||Okänt (använd sparsamt);Typ av HSP-säkring/skydd.
+CompactTransformerSubstation;har teknikutrymmestyp;BH;;;A||$||B||$||C||$||D||$||E||$||Elabonnemang||$||ERTMS E1||$||ERTMS E2||$||ERTMS E3||$||F||$||M85:1||$||M85:2||$||M85:3||$||M85:4||$||M95||$||M95:1||$||M95:2||$||M95:3||$||M95:4||$||Ej relevant||$||S&B||$||Okänt||$||Trä||$||XELA;Klassificering av teknikutrymmets utförande och storlek (t.ex. skåp, kiosk, kur).
+CompactTransformerSubstation;har typ av redundant nät;BH;;;Hjälpkraft||$||Reservelverk||$||Ortsnät||$||Ej relevant||$||Kontaktledning||$||Okänt;Kraftförsörjning vid bortfall av ordinarie nät.
+CompactTransformerSubstation;har ventilavledare;BH;;;Nej||$||Okänt||$||Ja;Förekomst av ventilavledare.
+CompactTransformerSubstation;har åskskyddstyp;BH;;;Ej relevant||$||Grov/Mellan||$||Grovskydd||$||Mellanskydd||$||Finskydd||$||Okänt;Typ av installerat åskskydd eller överspänningsskydd.
+CompactTransformerSubstation;installationsår;BH;gYear;;;År då entiteten installerades.
+CompactTransformerSubstation;matar;BH;string;;;Objektet som matas av transformatorn (fritext).
+CompactTransformerSubstation;modell;BH;;;Skåp||$||Containerelverk||$||Kiosk||$||Pumpstation||$||Relärum||$||Kur||$||Skarvskåp||$||Teknikhus||$||Trafikcentral;Modell på teknikutrymmet.
+CompactTransformerSubstation;märkeffekt;BH;string;^(?:[1-9]d{0,2}|[1-9]d{0,2}/[1-9]d{0,2})$;;Transformatorns storlek/märkeffekt i kVA (1-999/999).
+CompactTransformerSubstation;ortsnät id-nr;BH;string;;;ID-nummer för anslutning till ortsnät.
+CompactTransformerSubstation;reservelverk batteri installationsdatum;E;date;;;Installationsdatum på batterier i reservelverk.
+CompactTransformerSubstation;reservelverk batterimodell;BH;string;;;Batteriets typbeteckning enligt märkning i reservelverket.
+CompactTransformerSubstation;reservelverk installationsår;E;gYear;;;Året reservelverket installerades.
+CompactTransformerSubstation;reservelverk tankvolym;BH;integer;;;Reservelverkets tankvolym i liter.
+CompactTransformerSubstation;reservkraft märkeffekt;BH;integer;;;Reservelverkets nominella märkeffekt i kilovoltampere (kVA).
+CompactTransformerSubstation;tillhör teknikområdesgrupp;BH;;;IT-infrastruktur||$||Ej relevant||$||Elektrisk infrastruktur||$||Trafikinformationsinfrastruktur||$||Kameraövervakningsinfrastruktur;Teknikområde som anger vilken teknisk disciplin anläggningen tillhör.
+Derailer;har typ;BH;;;BV 1 klots||$||BV 2 klots||$||BV 3 klots||$||BV 4 klots||$||BV 6 klots||$||Okänt||$||Typ ej fastställd;Typ av spårspärr, definierad av antal klotsar och konstruktion.
+Detector;avropsdatum;E;date;;;Datum då detektorn formellt avropades.
+Detector;bvt-nummer;BH;string;^BVT-(?:[1-9][0-9]{5})$;;Identifierare för den IKT-förbindelse som är kopplad till objektet och används vid felanmälan och servicehantering (BVT-nummer).
+Detector;enhetens GS1-löpnummer;BH;integer;;;Unikt GS1-löpnummer som är tilldelat den fysiska detektorenheten.
+Detector;garantiperiod slut;E;date;;;Datum då detektorns garantiperiod upphör.
+Detector;godkänd garantibesiktning datum;E;date;;;Datum då garantibesiktning av detektorn godkändes.
+Detector;godkänd installationsbesiktning datum;E;date;;;Datum då installationsbesiktning av detektorn godkändes.
+Detector;godkänd slutbesiktning datum;E;date;;;Datum då slutbesiktning av detektorn godkändes.
+Detector;har alias;E;string;;;Alternativ beteckning som används för att identifiera detektorn.
+Detector;har detektortyp;BH;;;Akustikdetektor||$||Varmgångs- och tjuvbromsdetektor||$||Upplyftsdetektor||$||Strömavtagardetektor||$||Hjulskadedetektor||$||Hjulprofildetektor;Klassificering av detektor utifrån dess funktionella detektionsprincip.
+Detector;har kommunikationsanslutningstyp;BH;;;Fast||$||GPRS||$||MVNO;Typ av kommunikationsanslutning som används för överföring av detektordata.
+Detector;har produktsystemtyp;BH;;;ABD||$||ATLAS MDS||$||BUBO||$||FUES I||$||FUES II||$||FUES II+||$||FUES II Si||$||KIKA||$||KIKA II||$||Ej relevant||$||PHOENIX MD||$||Servo/Satt||$||Okänt||$||Wheelscan 1||$||Wheelscan 2||$||Wheelscan, okänd typ||$||WPM;Produkt- eller systembeteckning för detektorn.
+Detector;har typ av klimatreglering i kiosk;BH;;;AC||$||Fläkt||$||Frikyla||$||Luftventil||$||Okänt;Typ av klimatregleringssystem som används för att upprätthålla temperaturen i detektorkiosken.
+Detector;har åskskydd;BH;;;Nej||$||Okänt||$||Ja;Anger om åskskydd är installerat i elkraftmatningen till detektorkiosken.
+Detector;har övervakande central;BH;;;Boden||$||Gävle||$||Göteborg||$||Hallsberg||$||Malmö||$||Norrköping||$||Ej relevant||$||Inte ansluten||$||Prov||$||Stockholm||$||Okänt||$||Ånge;Central som ansvarar för operativ övervakning av detektorn.
+Detector;inkopplad på hårdvaruport;BH;integer;;;Fysisk port i switch eller modem som används för anslutning av enheten.
+Detector;ip-adress;BH;string;^(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]d?|0).){3}(?:25[0-5]|2[0-4]d|1dd|[1-9]d?|0)$;;IP-adress som är tilldelad enheten för nätverkskommunikation.
+Detector;ip-port;BH;integer;;;IP-portnummer som används för nätverkskommunikation med enheten.
+Detector;telefonnummer till kur eller kiosk;E;string;^(?:[0-9]{3}-[0-9]{4,6})$;;Telefonnummer som är kopplat till detektorkur eller kiosk.
+Detector;telefonnummer till serviceanslutning;E;string;^(?:[0-9]{3}-[0-9]{4,6})$;;Telefonnummer som används för serviceanslutning till detektorn.
+Detector;underhålls av;BH;;;Organization-Amtab||$||Organization-BalfourBeatty||$||Organization-BombardierTransportation||$||Organization-FaiveleyTransport||$||Organization-Infranord||$||Organization-SchenckProcess||$||Organization-SensysTraffic||$||Organization-StruktonRail||$||Organization-TrimbleEurope||$||Organization-Unknown||$||Organization-VoestalpineSignaling||$||Organization-VRTrack;Organisation som ansvarar för förebyggande och avhjälpande underhåll.
+Detector;underhållskontrakts slutdatum;E;date;;;Datum då underhållskontraktet för detektorn upphör.
+Detector;ups-batterier bytta datum;E;date;;;Datum då UPS-batterier som försörjer detektorn byttes.
+DistantSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+DistantSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+EquipmentEnclosure;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+EquipmentEnclosure;har fasadutförande;BH;;;Tegel||$||Betong||$||Ej relevant||$||Annat||$||Plåt||$||Okänt||$||Trä;Fasadutförande som definierar teknikbyggnadens yttre klimatskal.
+EquipmentEnclosure;har faskonfiguration hjälpkraft;BH;;;Uppgift saknas eller finns ej||$||1-fas||$||3-fas||$||2-fas;Faskonfiguration för hjälpkraft.
+EquipmentEnclosure;har faskonfiguration ortsnät;BH;;;Uppgift saknas eller finns ej||$||1-fas||$||3-fas||$||2-fas;Faskonfiguration för ortsnät (extern nätleverantör).
+EquipmentEnclosure;har mellantrafo effektmärkning;BH;;;100 kVA||$||10 kVA||$||10 + 25 kVA||$||110 kVA||$||12 kVA||$||12 + 25 kVA||$||130 kVA||$||14 kVA||$||150 kVA||$||15 kVA||$||173 kVA||$||180 kVA||$||200 kVA||$||20 kVA||$||25 kVA||$||30 kVA||$||35 kVA||$||3 kVA||$||40 kVA||$||4 kVA||$||50 kVA||$||55 kVA||$||5 kVA||$||60 kVA||$||630 kVA||$||63 kVA||$||6 kVA||$||70 kVA||$||800 kVA||$||80 kVA||$||8 kVA||$||Ej relevant||$||Okänt;Mellantrafons storlek/effektmärkning, i kVA.
+EquipmentEnclosure;har ordinarie kraftförsörjningstyp;BH;;;Hjälpkraft||$||Ortsnät||$||Ej relevant||$||Kontaktledning||$||Okänt;Den ordinarie kraftförsörjningen som används vid normal drift, före eventuell omkoppling till redundant eller reservmatning.
+EquipmentEnclosure;har ortsnätsägare;BH;string;;;Nätägare för ortsnät.
+EquipmentEnclosure;har reservelverksutförande;BH;;;Integrerat||$||Ej relevant||$||Fristående||$||Okänt;Reservelverkets utförande (t.ex. integrerat/fristående).
+EquipmentEnclosure;har status för ordnings- och skyddsregler;BH;;;Nej||$||Loggbok finns men regler saknas||$||Ja, med loggbok||$||Ej relevant||$||Ja, utan loggbok||$||Okänt;Anger om ordnings- och skyddsregler finns uppsatta.
+EquipmentEnclosure;har säkringsmärkström på hjälpkraft;BH;;;100 A||$||10 A||$||125 A||$||160 A||$||16 A||$||200 A||$||20 A||$||250 A||$||25 A||$||32 A||$||350 A||$||35 A||$||400 A||$||40 A||$||50 A||$||60 A||$||63 A||$||6 A||$||80 A||$||Uppgift saknas eller finns ej;Nominell säkringsmärkström (A) för hjälpkraft.
+EquipmentEnclosure;har säkringsmärkström på ortsnät;BH;;;100 A||$||10 A||$||125 A||$||160 A||$||16 A||$||200 A||$||20 A||$||250 A||$||25 A||$||315 A||$||32 A||$||35 A||$||50 A||$||60 A||$||63 A||$||80 A||$||Uppgift saknas eller finns ej;Nominell säkringsmärkström (A) för ortsnät.
+EquipmentEnclosure;har teknikutrymmestyp;BH;;;A||$||B||$||C||$||D||$||E||$||Elabonnemang||$||ERTMS E1||$||ERTMS E2||$||ERTMS E3||$||F||$||M85:1||$||M85:2||$||M85:3||$||M85:4||$||M95||$||M95:1||$||M95:2||$||M95:3||$||M95:4||$||Ej relevant||$||S&B||$||Okänt||$||Trä||$||XELA;Klassificering av teknikutrymmets utförande och storlek (t.ex. skåp, kiosk, kur).
+EquipmentEnclosure;har typ av redundant nät;BH;;;Hjälpkraft||$||Reservelverk||$||Ortsnät||$||Ej relevant||$||Kontaktledning||$||Okänt;Kraftförsörjning vid bortfall av ordinarie nät.
+EquipmentEnclosure;har åskskyddstyp;BH;;;Ej relevant||$||Grov/Mellan||$||Grovskydd||$||Mellanskydd||$||Finskydd||$||Okänt;Typ av installerat åskskydd eller överspänningsskydd.
+EquipmentEnclosure;installationsår;BH;gYear;;;År då entiteten installerades.
+EquipmentEnclosure;modell;BH;;;Skåp||$||Containerelverk||$||Kiosk||$||Pumpstation||$||Relärum||$||Kur||$||Skarvskåp||$||Teknikhus||$||Trafikcentral;Modell på teknikutrymmet.
+EquipmentEnclosure;ortsnät id-nr;BH;string;;;ID-nummer för anslutning till ortsnät.
+EquipmentEnclosure;reservelverk batteri installationsdatum;E;date;;;Installationsdatum på batterier i reservelverk.
+EquipmentEnclosure;reservelverk batterimodell;BH;string;;;Batteriets typbeteckning enligt märkning i reservelverket.
+EquipmentEnclosure;reservelverk installationsår;E;gYear;;;Året reservelverket installerades.
+EquipmentEnclosure;reservelverk tankvolym;BH;integer;;;Reservelverkets tankvolym i liter.
+EquipmentEnclosure;reservkraft märkeffekt;BH;integer;;;Reservelverkets nominella märkeffekt i kilovoltampere (kVA).
+EquipmentEnclosure;tillhör teknikområdesgrupp;BH;;;IT-infrastruktur||$||Ej relevant||$||Elektrisk infrastruktur||$||Trafikinformationsinfrastruktur||$||Kameraövervakningsinfrastruktur;Teknikområde som anger vilken teknisk disciplin anläggningen tillhör.
+EtcsMarkerBoard;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+EtcsMarkerBoard;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+EtcsMarkerBoard;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+EtcsMarkerBoard;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+Eurobalise;Artikelnummer;E;string;;;
+Eurobalise;Serienummer;E;string;;;
+Eurobalise;Utbytesdatum;E;date;;;
+Eurobalise;Är Tillverkad Av;E;;;Alstom||$||Hitachi||$||Siemens;
+EurobaliseGroup;Grupp-ID;BH;string;^\d+$;;Corresponds to ETCS variable NID_BG describing the balise group ID.
+EurobaliseGroup;Har Riktningsgiltighet N_PIG;BH;;;DecreasingNPIG||$||IncreasingNPIG;
+EurobaliseGroup;Landskod;BH;string;;;Corresponds to ETCS variable NID_C describing he countryID of the balise group.
+FixedSignalBoard;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+FixedSignalBoard;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+InsulatedRailJoint;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+InsulatedRailJoint;har drifttillstånd;BH;;;I bruk||$||Byglad||$||Okänt;Drifttillstånd för isolerskarven.
+InsulatedRailJoint;har isolerskarvsmodell;BH;;;Bondad 4-håls||$||Bondad 4-håls, fältmonterad||$||Bondad 6-håls||$||Bondad 6-håls, 6 mm||$||Bondad 6-håls, fältmonterad||$||Exel||$||Fiber||$||Övrig||$||Permali||$||Rilsan||$||Scotchply||$||Tenconi 4-håls||$||Tenconi 6-håls||$||Okänt;Modell på isolerskarven.
+InsulatedRailJoint;har partikelmagnet;BH;string;;;Den partikelmagnet som är kopplad till isolerskarven.
+InsulatedRailJoint;har passrällängd;BH;decimal;;;Passrälens längd i meter.
+InsulatedRailJoint;installationsår;BH;gYear;;;År då entiteten installerades.
+InsulatedRailJoint;tillverkningsår;BH;gYear;;;År då entiteten tillverkades.
+KilometerMarkerBoard;har belysningstyp;BH;;;Med lampa||$||Belyst||$||Ej relevant;Anger belysningsutförandet för den fasta signaltavlan, exempelvis inbyggd belysning eller belysning via extern lampa.
+KilometerMarkerBoard;information på signaltavla;BH;string;;;Anger eventuell tilläggsinformation som visas på signalens tavla eller tillhörande skylt, när sådan information förekommer.
+KilometerMarkerBoard;typ av optisk signaltavla;SH;;;Övrig;Typ av optisk signaltavla.
+KilometerMarkerBoard;är roterbar;BH;;;Nej||$||Ej relevant||$||Okänt||$||Ja;Anger om signalens tavla eller tillhörande skylt är mekaniskt vridbar.
+LevelCrossingSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+LevelCrossingSignal;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+LevelCrossingSignal;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+LevelCrossingSignal;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+LevelCrossingSignal;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+LevelCrossingSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+LinearLocationEntity;2D-linjestilsnamn;SH;string;;;Namn på 2D-linjestilen som används för linjära objekt i CAD.
+LinearLocationEntity;Feature definition-namn;SH;string;;;Namn på den feature definition som CAD-objektet instansierar.
+LinearLocationEntity;Kommentar 1;;string;;;Fritextkommentar, fält 1, som beskriver en entitet i en CAD-modell.
+LinearLocationEntity;Kommentar 2;;string;;;Fritextkommentar, fält 2, som beskriver en entitet i en CAD-modell.
+LinearLocationEntity;Kommentar 3;;string;;;Fritextkommentar, fält 3, som beskriver en entitet i en CAD-modell.
+LinearLocationEntity;Objektbeteckning;SH;string;;;Beteckning som används för att benämna objektet.
+LinearLocationEntity;Ritningstext;;string;;;Ritningstext såsom representerad i CAD.
+LinearLocationEntity;Slutpunktens bandel;SH;string;;;Beteckning på den bandel som det linjära objektets slutpunkt tillhör.
+LinearLocationEntity;Slutpunktens kilometertal;SH;decimal;;;Km-tal för det linjära objektets slutpunkt, angivet i meter, exempelvis 123456.789.
+LinearLocationEntity;Slutpunktens koordinater;SH;string;^-?\d+(\.\d+)?,-?\d+(\.\d+)?$;;Koordinater för det linjära objektets slutpunkt, som en kommaseparerad sträng med X- och Y-värden, exempelvis '199099.21,7359701.80'.
+LinearLocationEntity;Slutpunktens spårtillhörighet;SH;string;;;Beteckning på det spår som det linjära objektets slutpunkt tillhör.
+LinearLocationEntity;Startpunktens bandel;SH;string;;;Beteckning på den bandel som det linjära objektets startpunkt tillhör.
+LinearLocationEntity;Startpunktens kilometertal;SH;decimal;;;Km-tal för det linjära objektets startpunkt, angivet i meter, exempelvis 123456.789.
+LinearLocationEntity;Startpunktens koordinater;SH;string;^-?\d+(\.\d+)?,-?\d+(\.\d+)?$;;Koordinater för det linjära objektets startpunkt, som en kommaseparerad sträng med X- och Y-värden, exempelvis '199099.21,7359701.80'.
+LinearLocationEntity;Startpunktens spårtillhörighet;SH;string;;;Beteckning på det spår som det linjära objektets startpunkt tillhör.
+LinearLocationEntity;Status;SH;;;Slopande||$||Rivning||$||Demontering Återmontering||$||Demontering Upplag||$||Befintligt||$||Introducerad i tidigare etapp||$||Nytt||$||Tillfälliga installationer;Anger byggstatus för entiteten.
+LinearLocationEntity;UUID;SH;string;^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$;;UUID version 4 enligt RFC 9562
+MainLightSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+MainLightSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+MainShuntingSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+MainShuntingSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+OverheadLineBridge;har bärlineförstärkning;BH;;;Nej||$||Ej relevant||$||Okänt||$||Ja;Anger om bärlineförstärkning finns.
+OverheadLineBridge;har fågelskyddstyp för utliggare;BH;;;Isolationsskydd överrör||$||Ej relevant||$||Okänt;Typ av fågelskydd på utliggare.
+OverheadLineBridge;har fågelskyddstyp på kontaktledningsbrygga;BH;;;Komplett fågelskydd||$||Fågelavvisare kantbalk||$||Ej relevant||$||Okänt;Typ av fågelskydd på kontaktledningsbrygga.
+OverheadLineBridge;har förankrings- eller avspänningstyp;BH;;;Förankring||$||Fast avspänning||$||Ej relevant||$||Fjäderavspänning||$||Okänt||$||Viktavspänning;Om förankring eller avspänning görs i kontaktledningsbärverk och vilken typ.
+OverheadLineBridge;har linisolationstyp;BH;;;Snäppslang||$||Ej relevant||$||Plastslang||$||Okänt;Typ av linisolation på bärlinan för spannet efter kontaktledningsbärverket.
+OverheadLineBridge;har roterande reflextyp;BH;;;Ej relevant||$||Roterande reflex||$||Okänt;Status/typ för roterande reflexer för spannet efter kontaktledningsbärverk.
+OverheadLineBridge;har tillsatsrörslängd;BH;;;1000 mm||$||1300 mm||$||800 mm||$||Ej relevant;Tillsatsrörets längd i utliggaren, angiven i millimeter.
+OverheadLineBridge;har typ;BH;;;B 13-7||$||B 76||$||B 76 (häst)||$||B 87||$||B 9,5-7||$||Balkbrygga||$||Ej relevant||$||Okänt;Modell/typ av brygga.
+OverheadLineBridge;installationsår;BH;gYear;;;År då entiteten installerades.
+OverheadLineBridge;längd;BH;integer;;;Bryggans längd i meter.
+OverheadLineMast;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+OverheadLineMast;har fundamenttyp;BH;;;Typ 0||$||Typ 1||$||Typ 2||$||Typ 3||$||Typ 5||$||Typ 6||$||Typ 7||$||Typ 8||$||Typ 9||$||Okänt;Typ av fundament för stolpen.
+OverheadLineMast;har fågelskyddstyp för linor;BH;;;Isolationsskydd||$||Ej relevant||$||Okänt;Typ av fågelskydd på linor.
+OverheadLineMast;har fågelskyddstyp för stolpe;BH;;;Fågelskydd stolptopp||$||Ej relevant||$||Okänt;Typ av fågelskydd på stolpen.
+OverheadLineMast;har förankrings- eller avspänningstyp;BH;;;Förankring||$||Fast avspänning||$||Ej relevant||$||Fjäderavspänning||$||Okänt||$||Viktavspänning;Om förankring eller avspänning görs i kontaktledningsbärverk och vilken typ.
+OverheadLineMast;har linisolationstyp;BH;;;Snäppslang||$||Ej relevant||$||Plastslang||$||Okänt;Typ av linisolation på bärlinan för spannet efter kontaktledningsbärverket.
+OverheadLineMast;har roterande reflextyp;BH;;;Ej relevant||$||Roterande reflex||$||Okänt;Status/typ för roterande reflexer för spannet efter kontaktledningsbärverk.
+OverheadLineMast;har stagtyp;BH;;;Förankring||$||Förankring och kurvstag||$||Förankring och bankettstag||$||Vinkelstag||$||Kurvstag||$||Bankettstag||$||Bankettstag och kurvstag||$||Fast avspänning||$||Ej relevant||$||Rotstag||$||Avspänning||$||Avspänning och förankring||$||Avspänning och kurvstag||$||Avspänning och bankettstag||$||Avspänning och fast avspänning||$||Okänt;Typ av stag som används för stolpen.
+OverheadLineMast;har strävtyp;BH;;;14B||$||14L||$||16B||$||16L||$||18B||$||18L||$||20B||$||20L||$||B5||$||Ej relevant||$||Okänt;Typ av sträva eller extra stöd för masten.
+OverheadLineMast;har tillsatsrörslängd;BH;;;1000 mm||$||1300 mm||$||800 mm||$||Ej relevant;Tillsatsrörets längd i utliggaren, angiven i millimeter.
+OverheadLineMast;har typ;SH;;;10/8.1 med fotplatta||$||10/x||$||12/8.1 med fotplatta||$||12/T sugtransformatorstolpe||$||12/x||$||14/8.1 med fotplatta||$||14/T sugtransformatorstolpe||$||14/x||$||16/8.1 med fotplatta||$||16/8.1T sugtransformatorstolpe med fotplatta||$||16/8.5 med fotplatta||$||16/T sugtransformatorstolpe||$||16/x||$||18/20/x trebent||$||18/9.0 med fotplatta||$||18/x||$||20/20/11.75 trebent||$||20/20/9.0 trebent med fotplatta||$||20/20/T trebent för sugtransformator||$||20/20/x trebent||$||20/8.75 bryggstolpe||$||20/9.0 med fotplatta||$||20/T sugtransformatorstolpe||$||20/x||$||Betong||$||Special||$||Okänt||$||Trä;Modell/typ av stolpe.
+OverheadLineMast;installationsår;BH;gYear;;;År då entiteten installerades.
+PointHeatingCabinet;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+PointHeatingCabinet;bvt-nummer;E;string;^(?:[1-9]d{5}|Se master)$;;Identifierare för den IKT-förbindelse som är kopplad till objektet och används vid felanmälan och servicehantering (BVT-nummer). Ange Se master om skåpet är slav.
+PointHeatingCabinet;har ansluten belysning;BH;;;Nej||$||Okänt||$||Ja;Anger om växelbelysning styrs och kraftförsörjs från växelvärmeskåpet.
+PointHeatingCabinet;har anslutningstyp;BH;;;Radiolänk 4G||$||Styrkabel med modem||$||Kopparkabel med modem, multidrop||$||Kopparkabel med modem, punkt-till-punkt||$||Optokabel||$||Lokalanslutning i teknikhus||$||Nätverkskabel||$||Ej relevant||$||Anslutning inte utförd||$||Finns ej||$||Radiolänk||$||SHDSL||$||Okänt;Vilken typ av anslutning skåpet har till processnätet (ej relevant för slav).
+PointHeatingCabinet;har elmätare;BH;boolean;;;Anger om elmätare finns eller inte.
+PointHeatingCabinet;har faskonfiguration;BH;;;3-fas||$||2-fas;Faskonfiguration för ansluten kraftförsörjning.
+PointHeatingCabinet;har fundamenttyp;BH;;;Plåtfundament||$||Inget fundament||$||Annat||$||Stolpe i plint||$||Okänt;Vilken typ av fundament skåpet står på.
+PointHeatingCabinet;har mellantrafo effektmärkning;BH;;;100 kVA||$||10 kVA||$||10 + 25 kVA||$||12 kVA||$||12 + 25 kVA||$||130 kVA||$||14 kVA||$||150 kVA||$||15 kVA||$||173 kVA||$||200 kVA||$||20 kVA||$||25 kVA||$||300 kVA||$||30 kVA||$||3 kVA||$||40 kVA||$||4 kVA||$||500 kVA||$||50 kVA||$||55 kVA||$||5 kVA||$||60 kVA||$||630 kVA||$||63 kVA||$||6 kVA||$||70 kVA||$||800 kVA||$||80 kVA||$||8 kVA||$||Ej relevant||$||Okänt;Mellantrafons storlek/effektmärkning, i kVA.
+PointHeatingCabinet;har plattform;BH;;;Nej||$||Okänt||$||Ja;Anger om det finns betjäningsyta i form av en plattform att stå på.
+PointHeatingCabinet;har roll;BH;;;Masterskåp||$||Slavskåp||$||Okänt;Anger om skåpet är master (med styrenhet) eller slav (utan styrenhet).
+PointHeatingCabinet;har skåptyp;BH;;;Typ A||$||Typ B||$||Typ C;Skåptyp (t.ex. A/B/C enligt antal styrdon/dörrar).
+PointHeatingCabinet;huvudsäkring märkström;BH;integer;;;Huvudsäkring för växelvärmeskåpet, i ampere.
+PointHeatingCabinet;installationsår;BH;gYear;;;År då entiteten installerades.
+PointHeatingCabinet;ip-adress;BH;string;^(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]d?|0).){3}(?:25[0-5]|2[0-4]d|1dd|[1-9]d?|0)$;;IP-adress som är tilldelad enheten för nätverkskommunikation.
+PointHeatingCabinet;styrs av;BH;string;;;Referens till masterskåp som styr detta slavskåp (ej relevant om master).
+PointHeatingCabinet;tillverkarens skåp-id;E;string;;;Tillverkarens id-nummer för det levererade skåpet.
+PointIndicatorLamp;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+PointIndicatorLamp;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+PointIndicatorLamp;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+PointIndicatorLamp;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+PointIndicatorLamp;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+PointIndicatorLamp;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+RepeaterSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+RepeaterSignal;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+RepeaterSignal;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+RepeaterSignal;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+RepeaterSignal;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+RepeaterSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+ShoreSupply;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+ShoreSupply;har modell;BH;;;230V 16Hz||$||230V 50Hz||$||400V 16A||$||400V 32A||$||400V 63A||$||AST-C1||$||JACO-02||$||JACO-14||$||JACO-91||$||JACO-96||$||JACO-97||$||JACO-98||$||JACO-99||$||JACO-M15||$||JACO, modell ej fastställd||$||Kabeldon||$||Ej relevant||$||SJ Gul||$||Uttagscentral||$||Uttagspost||$||Okänt;Modell på värmeposten.
+ShoreSupply;har märkeffekt;BH;;;1000 kVA||$||100 kVA||$||1250 kVA||$||1750 kVA||$||200 kVA||$||250 kVA||$||30 kVA||$||500 kVA||$||50 kVA||$||800 kVA||$||Ej relevant||$||Okänt;Märkeffekt på transformatorn angivet i kVA.
+ShoreSupply;har transformatorbrytartyp;BH;;;ABB Sace||$||AEG ME 1000||$||ASEA ALG 1250||$||Merlin Gerin||$||Ej relevant||$||Oljebrytare||$||Siemens R 914||$||Okänt;Typ av brytare på transformatorn.
+ShoreSupply;har typ;BH;;;Diesellokvärmepost||$||Ellokvärmepost||$||Lokvärmetransformator||$||Övrig värmepost||$||Tågvärmepost||$||Tågvärmetransformator;Typ av tåg- och lokvärme baserat på användningsområde.
+ShoreSupply;installationsår;BH;gYear;;;År då entiteten installerades.
+ShuntingSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+ShuntingSignal;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+ShuntingSignal;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+ShuntingSignal;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+ShuntingSignal;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+ShuntingSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+SpotLocationEntity;3D-geometrinamn;SH;string;;;Namn på den 3D-geometri som används för objektet i CAD.
+SpotLocationEntity;Bandel;SH;string;;;Beteckning på den bandel som entiteten tillhör.
+SpotLocationEntity;Elevation;SH;decimal;;;Objektets vertikala nivå i förhållande till referensen, angiven i meter.
+SpotLocationEntity;Elevationtyp;SH;;;Absolut||$||Relativt till spårmitt||$||Relativt till närmaste räl;Anger vad nivåvärdet är uppmätt från, exempelvis 'centerline'.
+SpotLocationEntity;Feature definition-namn;SH;string;;;Namn på den feature definition som CAD-objektet instansierar.
+SpotLocationEntity;Insättningspunktens koordinat;SH;string;^-?\d+(\.\d+)?,-?\d+(\.\d+)?,-?\d+(\.\d+)?$;;Insättningspunktens koordinat för objektets feature definition, som en kommaseparerad sträng med X-, Y- och Z-värden, exempelvis '199099.21,7359701.80,32.10'.
+SpotLocationEntity;Kilometertal;SH;string;^\d+\+\d+(\.\d+)?$;;Linjär referens angiven som ett kilometertal längs spåret, exempelvis '1313+286.211'.
+SpotLocationEntity;Kommentar 1;;string;;;Fritextkommentar, fält 1, som beskriver en entitet i en CAD-modell.
+SpotLocationEntity;Kommentar 2;;string;;;Fritextkommentar, fält 2, som beskriver en entitet i en CAD-modell.
+SpotLocationEntity;Kommentar 3;;string;;;Fritextkommentar, fält 3, som beskriver en entitet i en CAD-modell.
+SpotLocationEntity;Objektbeteckning;SH;string;;;Beteckning som används för att benämna objektet.
+SpotLocationEntity;Offset;SH;decimal;;;Objektets horisontella avstånd från referenslinjen, angivet i meter.
+SpotLocationEntity;Offsettyp;SH;;;Relativt till spårmitt||$||Relativt till närmaste räl;Anger vad offsetvärdet är uppmätt från, exempelvis 'centerline'.
+SpotLocationEntity;Plansymbolnamn;SH;string;;;Namn på plansymbolen som används för objektet i CAD.
+SpotLocationEntity;Ritningstext;;string;;;Ritningstext såsom representerad i CAD.
+SpotLocationEntity;Spårtillhörighet;SH;string;;;Spårtillhörighet enligt levererad CAD-information.
+SpotLocationEntity;Status;SH;;;Slopande||$||Rivning||$||Demontering Återmontering||$||Demontering Upplag||$||Befintligt||$||Introducerad i tidigare etapp||$||Nytt||$||Tillfälliga installationer;Anger byggstatus för entiteten.
+SpotLocationEntity;UUID;SH;string;^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-4[a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$;;UUID version 4 enligt RFC 9562
+SpotLocationEntity;Z-rotation mot norr;SH;decimal;;;Objektets absoluta rotation runt Z-axeln, angiven i grader relativt norr i projektets koordinatsystem.
+SpotLocationEntity;Z-rotation mot spår;SH;decimal;;;Objektets rotation runt Z-axeln, angiven i grader relativt spårets tangentriktning vid objektets position.
+StationaryTractionTransformer;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+StationaryTractionTransformer;har elektrisk märkdata;BH;;;100 A||$||100 kVA||$||10 kVA||$||140 A||$||200 A||$||25 kVA||$||2 kVA||$||300 A||$||30 kVA||$||3 MVA||$||500 A||$||50 kVA||$||5 kVA||$||5 MVA||$||6000 kVA||$||65 kVA||$||Ej relevant||$||Okänt;Anger transformatorns nominella elektriska kapacitet i form av märkeffekt eller märkström.
+StationaryTractionTransformer;har funktionstyp;SH;;;Autotrafo||$||Hjälptrafo||$||Sugtrafo||$||Mättrafo;Transformatorns funktion.
+StationaryTractionTransformer;har fågelskyddstyp;BH;;;Kombinerat skydd||$||Isolationsskydd anslutningslinor||$||Isolatorskydd||$||Ej relevant||$||Okänt;Anger om transformatorn är försedd med fågelskydd och i så fall vilken typ.
+StationaryTractionTransformer;har installationstyp;BH;;;Markmonterad||$||Ej markmonterad||$||Skyddsbyggnad med oljeuppsamling||$||Okänt;Anger transformatorns fysiska installationsutförande, dvs. hur och var den är placerad i förhållande till marknivå och eventuella skyddsbyggnader.
+StationaryTractionTransformer;har kapslingstyp;BH;;;Kabellindad||$||Dubbelkärl||$||Epoxiisolerad||$||Enkelkärl||$||Okänt;Transformatorns kapslingstyp.
+StationaryTractionTransformer;har oljemängd;BH;;;3 250 kg||$||450 kg||$||500 kg||$||560 kg||$||950 kg||$||Ej relevant;Mängd olja i transformatorn, angiven i kilogram.
+StationaryTractionTransformer;har oljetyp;BH;;;Ester||$||Mineral||$||Ej relevant||$||Okänt;Typ av olja som används i transformatorn.
+StationaryTractionTransformer;installationsår;BH;gYear;;;År då entiteten installerades.
+StationaryTractionTransformer;serienummer;BH;string;;;Av tillverkaren angivet serienummer för transformatorn.
+StopLight;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+StopLight;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+StopLight;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+StopLight;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+StopLight;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+StopLight;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+TrainRouteSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+TrainRouteSignal;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+TrainRouteSignal;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+TrainRouteSignal;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+TrainRouteSignal;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+TrainRouteSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+WaysideLightSignal;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+WaysideLightSignal;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+WaysideLightSignal;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+WaysideLightSignal;har LED-lampa;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är utrustad med en eller flera lysdiodlampor (LED).
+WaysideLightSignal;är fiktiv;BH;;;Nej||$||Ej relevant||$||Ja;Anger om ljussignalen är fiktiv (en logisk/virtuell signal som används när en signalindikation gäller för två spår, t.ex. dvsi i en DKV).
+WaysideLightSignal;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+WaysideSignalBoard;Montage;BH;string;;;"Konstruktion som objektet är monterat på, angiven som fritext, t.ex. ""M"" (mast), ""Br. 20"" (brygga 20) eller ""St. 10"" (stolpe 10)."
+WaysideSignalBoard;Riktningsgiltighet;SH;;;Stigande kilometertal||$||Fallande kilometertal||$||Okänd;Entitetens riktningsgiltighet i förhållande till km-talets riktning.
+WaysideSignalBoard;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+WaysideSignalBoard;har belysningstyp;BH;;;Med lampa||$||Belyst||$||Ej relevant;Anger belysningsutförandet för den fasta signaltavlan, exempelvis inbyggd belysning eller belysning via extern lampa.
+WaysideSignalBoard;har typ av optisk signaltavla;SH;;;200m tvl||$||Tillsklt||$||Pilskylt||$||Bal.m.tv||$||Balsi.tv||$||Påst.sign.||$||Tvl.fkör||$||Strömbeg||$||Spskrm||$||Urkoptvl||$||Fsib.tvl||$||Fsitvl||$||Elsp.si||$||Slutptvl||$||Hind.pål||$||Lutn.tvl||$||Gränstavla||$||Ogilttvl||$||TvlVsi||$||Hsitvl||$||Rörlig.k||$||St.f.tvl||$||Hind.tvl||$||Tvlgrdpd||$||Otvl||$||Övrig||$||Medg.tvl||$||Växeltvl||$||Radiosi.tv||$||Repb.tvl||$||Ringsklt||$||Vxlgrtvl||$||Dvärgtvl||$||Plog.tvl||$||Ljud.tvl||$||HIStavla||$||Uppehtvl||$||Stopptvl||$||Nedkptvl||$||Inkpltvl||$||SystvlE1||$||SystvlE2||$||SystvlE3||$||SystvlH||$||SystvlM||$||SystvlR||$||SystvlS||$||Målp.tvl||$||Spnr.tvl||$||Tvsi;Typ av optisk signaltavla.
+WaysideSignalBoard;information på signaltavla;BH;string;;;Anger eventuell tilläggsinformation som visas på signalens tavla eller tillhörande skylt, när sådan information förekommer.
+WaysideSignalBoard;är monterad i brygga;BH;;;Nej||$||Okänt||$||Ja;Anger om signalanordningen är monterad i kontaktledningsbrygga.
+WaysideSignalBoard;är roterbar;BH;;;Nej||$||Ej relevant||$||Okänt||$||Ja;Anger om signalens tavla eller tillhörande skylt är mekaniskt vridbar.
+WheelDetector;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+WheelDetector;har typ;BH;;;Amtab||$||Övrig||$||Siemens;Anger vilken typ av rälskontakt en instans representerar. Värdet används för att klassificera rälskontakten utifrån fabrikat eller teknisk typ.
+WheelDetector;installationsår;BH;gYear;;;År då entiteten installerades.
+YardLighting;Sida;SH;;;Vänster||$||Höger||$||Okänd;Objektets laterala placering i förhållande till spårets mittlinje, sett i stigande km-riktning.
+YardLighting;användbar livslängd;FD;;;L100@100kh||$||L100@50kh||$||L70@100kh||$||L70@50kh||$||L70@60kH||$||L80@100kh||$||L80@33kh||$||L80@50kh||$||L80@60kh||$||L90@100kh||$||L90@50kh||$||L95@25kh||$||Ej relevant||$||Okänt;Klassning av LED-livslängd som anger kvarvarande ljusflöde efter en viss drifttid (t.ex. L80@50kh).
+YardLighting;armaturens installationsdatum;E;date;;;Datum för installation av armaturen.
+YardLighting;armaturens medeleffekt;FD;integer;;;Armaturens medeleffekt under dess användbara livslängd, i watt (W).
+YardLighting;armaturens sluteffekt;FD;integer;;;Armaturens effekt vid slutet av dess livslängd, i watt (W).
+YardLighting;armaturens vikt;FD;decimal;;;Armaturens vikt i kilogram (kg).
+YardLighting;armaturens vindarea;FD;decimal;;;Armaturens projicerade vindarea i kvadratmeter (m²).
+YardLighting;bibehållet ljusflöde;FD;integer;;;Bibehållet ljusflöde i lumen (lm).
+YardLighting;drivdonstyp;FD;;;Amplituddimring||$||1–10 V||$||Konventionell||$||Elektronisk||$||Flerfunktionsdrivdon||$||Nattsänkning||$||Okänt;Typ av drivdon som används av armaturen.
+YardLighting;färgtemperatur;FD;integer;;;Färgtemperatur i kelvin (K).
+YardLighting;har armatursbeteckning;FD;LuminaireDesignation;;Archiline_W||$||Areaflood Pro||$||BGP623 (Luma 1)||$||Copenhagen2 City, Small||$||Coreline Kapslad||$||DOC240-GB LED||$||Evolume2||$||i70-1200 LED 4500 DALI-EB3/DALI 840 TW PC QW25||$||Iridium SGS252/452||$||Irridium gen3 LED mini||$||ITALO 1||$||ITALO 2||$||Kona Washer||$||LEDway Road||$||Luma 1 RW||$||Lumenfacade SPECIAL||$||LumiStreet||$||Motion RW F431||$||Motion S RW F441||$||Muralux||$||Nyx 330 lykthuvud||$||Phalanx Linear 115||$||Polaris 150E||$||Pole 50 DI Minor||$||Schreder||$||SGS 203||$||Stella 210E||$||Stella LED 120||$||Rotationssymmetrisk optik, 125/80W QE||$||Stockholm LED G2||$||Unistreet RW||$||Okänt||$||Vialume 1||$||Vialume 2||$||Vialume 75||$||VIC1 36L35 NR 740 CL2 HFX 8M||$||VIC2 72L45 NR 740 CL2 HFX||$||Victor 7403||$||VICIA1 BO 24L50-740 NR BP HFX CL2 W8||$||Zebra Tyfon 48W IP65 Prism;Beteckning eller identifierare för armatur.
+YardLighting;har artikelnummer på armatur;BH;;;LED-armatur, Evolume 2 740 CLO||$||Evolume 2||$||Armatur SGS 203 150W||$||Armatur SGS 203 250W||$||LED-armatur för bangårdar,  320mA||$||Bel.armatur LED linjen||$||LED-armatur för driftplatser efter linjen,  585mA||$||LED-armatur för bangårdar, Unistreet RW||$||LED-armatur för växelområden, Unistreet RW||$||LED-armatur för bangårdar, Motion S RW F441||$||LED-armatur för växelområden, Motion RW F431||$||Zebra Tyfon 48W IP65 Prism||$||I70086226||$||Ej sortiment hos Materialservice||$||Okänt;Armaturens artikelnummer som identifierar armaturen och kopplar till dess tekniska egenskaper.
+YardLighting;har belysningstyp;BH;;;Arbetsbelysning||$||Bangårdsbelysning;Typ av plats eller användning där belysningen förekommer (t.ex. bangård, arbetsbelysning).
+YardLighting;har färg;FD;;;Color-Aluminuim||$||Svart||$||Grå||$||Okänt||$||Vit;Armaturens färg eller ytutförande.
+YardLighting;konstant ljusflöde;FD;;;Nej||$||Ja||$||Okänt;Anger om armaturen har konstant ljusflöde (CLO).
+YardLighting;ljuskällans effekt;FD;integer;;;Ljuskällans effekt i watt (W), inklusive drivdon där det är tillämpligt.
+YardLighting;ljuskällans installationsdatum;E;date;;;Datum för senaste installation av ljuskällan.
+YardLighting;ljuskällans typ;FD;;;Keramisk metallhalogen G12||$||Högtrycksnatrium, ellipsoid E27||$||Högtrycksnatrium, ellipsoid E40||$||Högtrycksnatrium, rörform E27||$||Högtrycksnatrium, rörform E40||$||Induktion||$||LED||$||LED-lampa E27||$||48 W LED-platta SMD||$||Lågtrycksnatrium BY22d||$||Lågtrycksnatrium, förbättrad BY22d||$||Kvicksilver reflektor E27||$||Metallhalogen, ellipsoid E27||$||Metallhalogen, ellipsoid E40||$||Metallhalogen, rörform E27||$||Metallhalogen, rörform E40||$||Metallhalogen, rörform PGZ18||$||Okänt;Ljuskällans typ enligt intern beteckning.
+YardLighting;lägesordning på brygga;BH;integer;;;Ordningsnummer på brygga, räknat från bryggstolpe utan bokstavssuffix.
+YardLighting;montagestrukturens beteckning;FD;string;;;Beteckning på den struktur (brygga/stolpe) där armaturen är monterad.
+YardLighting;montagestrukturens typ;FD;;;Belysningsbrygga||$||Belysningsstolpe||$||Kontaktledningsbrygga||$||Kontaktledningsstolpe||$||Snögalleri||$||Säker plats i tunnel||$||Under bro||$||Okänt||$||Viadukt eller tunnel;Typ av struktur som armaturen är monterad på.
+YardLighting;transientskyddsnivå;FD;integer;;;Transientskyddsnivå i kilovolt (kV).
+YardLighting;är tillverkad av;FD;;;AEC Illuminazione Srl||$||Cardi||$||CREE||$||Organization-AteljéLyktan||$||Ensto||$||Erco||$||Fagerhult||$||Flux||$||Glamox||$||Holophane||$||Organization-FoxDesignAB||$||LineaLight-Fox||$||Lumenpulse||$||Norka||$||Philips||$||Organization-NordicLight||$||Thornlighting||$||Okänt||$||we-ef||$||Zebra;Tillverkare/fabrikat för armaturen.
